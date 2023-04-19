@@ -20,7 +20,7 @@ function verificar(e) {
 function encriptar() {
     let texto = document.querySelector("#textarea").value.trim();
     if (texto != "") {
-        let textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+        let textoCifrado = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
         toggle();
         textoEncriptado.innerHTML = textoCifrado;
     } else {
@@ -32,7 +32,7 @@ function encriptar() {
 function desencriptar() {
     let texto = document.querySelector("#textarea").value.trim();
     if (texto != "") {
-        let textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+        let textoCifrado = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
         toggle();
         textoEncriptado.innerHTML = textoCifrado;
     } else {
