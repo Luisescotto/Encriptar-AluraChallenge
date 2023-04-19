@@ -183,6 +183,21 @@ textarea:focus {
     color: #006ef5;
 }
 
+footer {
+    border-top: 1px solid #ffffff;
+    padding-top: 3em;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .redesSociales img {
+    width: 2em;
+    fill: #ffffff !important;
+    margin: 0 1em;
+}
+
 .no-mostrar {
     display: none !important;
 }
