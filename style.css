@@ -1,0 +1,253 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #232323;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    width: 10vw;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3em;
+}
+
+.logo img {
+    width: 3em;
+}
+
+.encriptador {
+    width: 60vw;
+    display: flex;
+    padding-top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-container {
+    width: 70%;
+}
+
+.encriptador small {
+    margin-left: 2em;
+    color: #ffffff;
+    display: flex;
+    align-items: end;
+}
+
+.encriptador small img {
+    padding-right: 0.25em;
+}
+
+
+textarea {
+    resize: none;
+    width: 100%;
+    color: #006ef5;
+    height: 70vh;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.encriptador .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+
+.encriptador .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    text-align: center;
+}
+
+.button {
+    padding: .75em;
+    cursor: pointer;
+    border-radius: 24px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.button-primary {
+    background-color: #006ef5;
+    color: #fff;
+    border: 1px solid #006ef5;
+}
+
+.button-primary:hover {
+    background-color: #3f93fa;
+    color: #fff;
+    border: 1px solid #3f93fa;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #006ef5;
+    border: 1px solid #006ef5;
+}
+
+.button-secondary:hover {
+    background-color: #006ef5;
+    color: #ffffff;
+    border: 1px solid #006ef5;
+}
+
+.resultado {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_resultado {
+    background-color: #006ef5;
+    color: #ffffff;
+    height: 90vh;
+    width: 75%;
+    padding: 1em;
+    border-radius: 2em;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 45px -6px #006ef5;
+    -moz-box-shadow: 10px 10px 45px -6px #006ef5;
+    box-shadow: 10px 10px 45px -6px #006ef5;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 60vh;
+    margin-bottom: 2.5em;
+}
+
+.resultado .no-encontrado p {
+    font-size: 12px;
+}
+
+.resultado .no-encontrado img {
+    width: 100%;
+}
+
+.resultado .encontrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.resultado .encontrado .texto-encriptado {
+    color: #006ef5;
+    font-weight: 600;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.resultado .encontrado button {
+    margin-bottom: 2em;
+}
+
+
+.copiar {
+    background-color: #006ef5;
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+
+.copiar:hover {
+    background-color: #ffffff;
+    color: #006ef5;
+}
+
+.no-mostrar {
+    display: none !important;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .encriptador {
+        width: 50vw;
+    }
+
+    .resultado {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    main {
+        flex-direction: column;
+    }
+
+    .resultado,
+    .encriptador,
+    .logo {
+        width: 100%;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        padding-left: 2em;
+    }
+
+    .mensaje-container {
+        padding: 2em;
+    }
+
+    textarea {
+        height: 30vh;
+    }
+
+    .resultado .mensaje_resultado {
+        width: 100%;
+        margin: 2em;
+        height: auto;
+        max-height: auto;
+        overflow: hidden;
+    }
+
+    .resultado .mensaje_resultado .no-encontrado img {
+        display: none;
+    }
+
+    .scroll {
+        overflow-y: auto;
+        max-height: 60vh;
+        margin-bottom: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .encriptador .buttons {
+        flex-direction: column;
+    }
+}

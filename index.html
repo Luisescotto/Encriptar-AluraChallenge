@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <main>
+
+        <section class="logo">
+            <img src="img/logo.png" alt="Logo Alura">
+        </section>
+
+        <section class="encriptador">
+
+            <div class="mensaje-container">
+                <textarea name="textarea" id="textarea" placeholder="Ingresa el texto aquí"></textarea>
+
+                <div class="footer">
+                    <small><img src="img/icon.svg" alt=""> Solo letras minúsculas y sin acentos</small>
+
+
+                    <div class="buttons">
+                        <button class="button button-primary encriptar">Encriptar</button>
+                        <button class="button button-secondary desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="resultado">
+
+            <div class="mensaje_resultado">
+                <div class="no-encontrado">
+                    <img src="img/no-encontrado.png" alt="">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="encontrado  no-mostrar">
+                    <h3>Resultado:</h3>
+                    <div class="scroll">
+                        <p class="texto-encriptado"></p>
+                    </div>
+                    <button class="button button-secondary copiar">Copiar</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
