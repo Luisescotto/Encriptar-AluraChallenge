@@ -185,7 +185,7 @@ textarea:focus {
 
 footer {
     border-top: 1px solid #ffffff;
-    padding-top: 3em;
+    padding-top: 2em;
     height: 10vh;
     align-items: center;
     justify-content: center;
@@ -194,8 +194,14 @@ footer {
 
 footer .redesSociales img {
     width: 2em;
-    fill: #ffffff !important;
     margin: 0 1em;
+    padding: 1em;
+    transition: all .5s ease-in-out;
+}
+
+footer .redesSociales img:hover {
+    background-color: #006ef5 !important;
+    border-radius: 20px;
 }
 
 .no-mostrar {
