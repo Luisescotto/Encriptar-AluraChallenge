@@ -155,6 +155,7 @@ textarea:focus {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    word-break: break-all;
 }
 
 
