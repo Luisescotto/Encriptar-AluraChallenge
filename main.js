@@ -11,7 +11,7 @@ var copiar = document.querySelector(".copiar");
 document.getElementById("textarea").addEventListener("keypress", verificar);
 function verificar(e) {
 
-    if (e.key.match(/[a-z\s]/g) === null) {
+    if (e.key.match(/[a-zñ\s]/g) === null) {
         e.preventDefault();
     }
 }
